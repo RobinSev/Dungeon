@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="374.0" prefWidth="682.0" styleClass="background" stylesheets="@menu.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuView">
+   <children>
+      <ChoiceBox fx:id="fightSystemSelector" depthTest="DISABLE" layoutX="328.0" layoutY="219.0" prefHeight="26.0" prefWidth="195.0" />
+      <HBox layoutX="61.0" layoutY="289.0" prefHeight="48.0" prefWidth="574.0" styleClass="buttonContainer">
+         <children>
+            <Button mnemonicParsing="false" onAction="#quitButtonAction" prefHeight="37.0" prefWidth="79.0" styleClass="quitButton" text="Quit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="playButton1" mnemonicParsing="false" onAction="#playButtonAction" prefHeight="37.0" prefWidth="144.0" styleClass="playButton" text="Play!">
+               <opaqueInsets>
+                  <Insets top="-6.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>   
+         </children>
+      </HBox>
+      <TextField fx:id="nameField" layoutX="329.0" layoutY="96.0" prefHeight="27.0" prefWidth="195.0" />
+      <Label fx:id="emptyNameLabel" layoutX="287.0" layoutY="124.0" prefHeight="27.0" prefWidth="334.0" styleClass="errorLabel" />
+      <Label layoutX="128.0" layoutY="102.0" prefHeight="16.0" prefWidth="202.0" text="Enter the name of your player : ">
+         <styleClass>
+            <String fx:value="fieldLabel" />
+            <String fx:value="label" />
+         </styleClass>
+      </Label>
+      <Label layoutX="174.0" layoutY="223.0" prefHeight="16.0" prefWidth="153.0" text="Choose a fight system : ">
+         <styleClass>
+            <String fx:value="fieldLabel" />
+            <String fx:value="label" />
+         </styleClass>
+      </Label>
+      <Label layoutX="8.0" layoutY="1.0" prefHeight="48.0" prefWidth="666.0" text="THE DUNGEON GAME">
+         <styleClass>
+            <String fx:value="title" />
+            <String fx:value="fieldLabel" />
+         </styleClass></Label>
+      <ChoiceBox fx:id="playerSelector" depthTest="DISABLE" layoutX="327.0" layoutY="157.0" prefHeight="26.0" prefWidth="195.0" />
+      <Label layoutX="191.0" layoutY="163.0" prefHeight="16.0" prefWidth="134.0" text="Type of your player : ">
+         <styleClass>
+            <String fx:value="fieldLabel" />
+            <String fx:value="label" />
+         </styleClass>
+      </Label>
+   </children>
+</AnchorPane>

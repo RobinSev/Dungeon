@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import controller.graphical.dungeonview.MatrixPane?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@game.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.graphical.GraphicalController">
+   <children>
+      <HBox prefHeight="700.0" prefWidth="1268.0">
+         <children>
+            <VBox prefHeight="700.0" prefWidth="738.0">
+               <children>
+                  <AnchorPane prefHeight="50.0" prefWidth="862.0" style="-fx-background-color: black;">
+                     <children>
+                        <Label layoutX="59.0" layoutY="14.0" prefHeight="21.0" prefWidth="43.0" text="Life: " />
+                        <ProgressBar fx:id="lifeBar" layoutX="102.0" layoutY="19.0" prefHeight="14.0" prefWidth="200.0" progress="0.0" />
+                        <Label layoutX="414.0" layoutY="15.0" prefHeight="21.0" prefWidth="82.0" text="Strength:" />
+                        <Label fx:id="strengthLabel" layoutX="496.0" layoutY="15.0" prefHeight="21.0" prefWidth="131.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+                  <fx:include fx:id="room" source="roomView.fxml" />
+                  <Separator prefHeight="1.0" prefWidth="900.0" />
+                  <HBox>
+                     <children>
+                        <MatrixPane fx:id="dungeonGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" />
+                        <VBox prefHeight="329.0" prefWidth="584.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="15.0" prefWidth="584.0" styleClass="rules-description" text="COMMANDES DU JEU">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="20.0" prefWidth="580.0" styleClass="rules-description" text="• Pour vous déplacer, utilisez les flèches directionnelles. Pour rappel, la porte que vous " />
+                              <Label prefHeight="20.0" prefWidth="538.0" styleClass="rules-description" text=" venez de franchir se trouve derrière vous ! " />
+                              <Label prefHeight="20.0" prefWidth="581.0" styleClass="rules-description" text="• Pour collecter des trésors, appuyez sur la touche C (collect). Cette action vous permet de " />
+                              <Label prefHeight="20.0" prefWidth="581.0" styleClass="rules-description" text=" récupèrer l'ensemble des trésors présents dans la salle. Tout trésor ouvert disparaît." />
+                              <Label prefHeight="20.0" prefWidth="581.0" styleClass="rules-description" text="• Lors de votre entrée dans une salle, si elle contient un monstre, alors le combat entre vous" />
+                              <Label prefHeight="20.0" prefWidth="581.0" styleClass="rules-description" text="et ce dernier se déclenche et se déroule automatiquement selon le système de combat " />
+                              <Label prefHeight="20.0" prefWidth="581.0" styleClass="rules-description" text="sélectionné en amont. un monstre mort disparaît, et n'ayant pas de solution pour faire " />
+                              <Label prefHeight="20.0" prefWidth="581.0" styleClass="rules-description" text="patienter le programme (cf README), le monstre ne s'affiche pas)." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator maxWidth="1.0" minWidth="1.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="1.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <AnchorPane maxHeight="50.0" maxWidth="400.0" minHeight="50.0" minWidth="400.0" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: black;">
+                     <children>
+                        <Label layoutX="181.0" layoutY="16.0" text="Bag" />
+                     </children>
+                  </AnchorPane>
+                  <ListView fx:id="bag" prefHeight="650.0" prefWidth="400.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

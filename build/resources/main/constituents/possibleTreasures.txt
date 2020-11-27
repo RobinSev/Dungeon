@@ -1,0 +1,3 @@
+model.dungeon.rooms.treasures.CommonTreasure
+model.dungeon.rooms.treasures.RareTreasure
+model.dungeon.rooms.treasures.VeryRareTreasure

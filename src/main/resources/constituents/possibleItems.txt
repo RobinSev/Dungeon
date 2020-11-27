@@ -1,0 +1,9 @@
+model.items.armors.IronArmor
+model.items.armors.LeatherArmor
+model.items.armors.SteelArmor
+model.items.LifePotions.LightLifePotion
+model.items.LifePotions.MediumLifePotion
+model.items.LifePotions.StrongLifePotion
+model.items.strengthpotions.LightStrengthPotion
+model.items.strengthpotions.MediumStrengthPotion
+model.items.strengthpotions.StrongStrengthPotion

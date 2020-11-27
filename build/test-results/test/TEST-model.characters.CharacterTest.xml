@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.characters.CharacterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-11-27T20:11:44" hostname="DESKTOP-V7VA160" time="0.017">
+  <properties/>
+  <testcase name="testUpdateMaximumLife()" classname="model.characters.CharacterTest" time="0.013"/>
+  <testcase name="testUpdateLife()" classname="model.characters.CharacterTest" time="0.0"/>
+  <testcase name="testAttack()" classname="model.characters.CharacterTest" time="0.001"/>
+  <testcase name="testUpdateStrength()" classname="model.characters.CharacterTest" time="0.0"/>
+  <testcase name="testIsDead()" classname="model.characters.CharacterTest" time="0.0"/>
+  <testcase name="testConstructor()" classname="model.characters.CharacterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

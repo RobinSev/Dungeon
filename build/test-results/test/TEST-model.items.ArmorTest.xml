@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.items.ArmorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-27T20:11:44" hostname="DESKTOP-V7VA160" time="0.011">
+  <properties/>
+  <testcase name="testUseOn()" classname="model.items.ArmorTest" time="0.0"/>
+  <testcase name="testEquals()" classname="model.items.ArmorTest" time="0.006"/>
+  <testcase name="testConstructor()" classname="model.items.ArmorTest" time="0.005"/>
+  <system-out><![CDATA[class model.items.armors.IronArmor
+class model.items.armors.PersonalizedArmor
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

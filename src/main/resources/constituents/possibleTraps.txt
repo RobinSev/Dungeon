@@ -1,0 +1,3 @@
+model.dungeon.rooms.traps.CommonTrap
+model.dungeon.rooms.traps.DangerousTrap
+model.dungeon.rooms.traps.VeryDangerousTrap

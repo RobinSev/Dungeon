@@ -1,0 +1,4 @@
+model.characters.playables.StrongPlayer
+model.characters.playables.TankPlayer
+model.characters.playables.UnkillablePlayer
+model.characters.playables.UnpreparedWonderer
