@@ -17,8 +17,8 @@ balance of the game for example), and keep our code as simple as possible.
 We were evaluated on :
 
     * the overall quality of the code (readability, architecture, correctness).
-    * the flexibilty of our code through the respect of the SOLID principles (how easy it is to add a fight system, 
-        new characters, new items, etc).
+    * the flexibilty of our code through the respect of the SOLID principles (how easy it is to add a fight 
+        system, new characters, new items, etc).
 
 ## Grade
 Unknown at this time.
