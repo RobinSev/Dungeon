@@ -21,7 +21,7 @@ We were evaluated on :
         system, new characters, new items, etc).
 
 ## Grade
-Unknown at this time.
+16.25/20
 
 ## Known issues 
 Some issues remain, mostly linked to our priorisation, considering the evaluation criteria. Thus, we do not handle the 
